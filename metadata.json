@@ -1,0 +1,6 @@
+{
+  "name": "Neobrutalist 2 Player Game Hub",
+  "description": "A 2-player arcade & board game suite featuring 6 classic games in Neobrutalism style with local friend & AI bot modes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

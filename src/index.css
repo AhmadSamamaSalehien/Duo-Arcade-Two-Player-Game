@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .neo-box {
+    border: 4px solid #000000;
+    box-shadow: 4px 4px 0px 0px #000000;
+  }
+  
+  .neo-box-lg {
+    border: 4px solid #000000;
+    box-shadow: 8px 8px 0px 0px #000000;
+  }
+
+  .neo-box-red {
+    border: 4px solid #000000;
+    box-shadow: 6px 6px 0px 0px #FF6B6B;
+  }
+
+  .neo-box-blue {
+    border: 4px solid #000000;
+    box-shadow: 6px 6px 0px 0px #4D96FF;
+  }
+
+  .neo-button {
+    border: 4px solid #000000;
+    box-shadow: 4px 4px 0px 0px #000000;
+    transition: all 0.1s ease-in-out;
+  }
+
+  .neo-button:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px 0px #000000;
+  }
+
+  .neo-button:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px 0px #000000;
+  }
+
+  .bg-high-density {
+    background-color: #FFD93D;
+  }
+
+  .bg-grid-pattern {
+    background-size: 24px 24px;
+    background-image: 
+      linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+  }
+
+  .bg-dots-pattern {
+    background-image: radial-gradient(rgba(0, 0, 0, 0.2) 2px, transparent 2px);
+    background-size: 16px 16px;
+  }
+}
+
+/* Custom High Density brutalist font tweaks & smooth scrolling */
+body {
+  background-color: #FFD93D;
+  color: #000000;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  user-select: none;
+  overflow-x: hidden;
+}
+
+/* High Density brutalist scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFD93D;
+  border-left: 4px solid #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF6B6B;
+}
+
